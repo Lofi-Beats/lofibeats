@@ -1,0 +1,12 @@
+@font-face {
+    font-family: DD;
+    src: url(DD.otf);
+  }
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: DD;
+
+}
