@@ -2,41 +2,26 @@
 <html lang="en">
 
 <head>
-	    <link rel="icon" href="profile.png">
-	<title>Lofi beats - Premium lofi radio bot</title>
-<meta name="title" content="Lofi beats - Premium lofi radio bot">
-<meta name="description" content="Lofi Beats is a discord bot which can play lofi beats to your server with multiple lofi channels">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://lofibeats.tk/">
-<meta property="og:title" content="Lofi beats - Premium lofi radio bot">
-<meta property="og:description" content="Lofi Beats is a discord bot which can play lofi beats to your server with multiple lofi channels">
-<meta property="og:image" content="profile.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://lofibeats.tk/">
-<meta property="twitter:title" content="Lofi beats - Premium lofi radio bot">
-<meta property="twitter:description" content="Lofi Beats is a discord bot which can play lofi beats to your server with multiple lofi channels">
-<meta property="twitter:image" content="profile.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Lofi beats</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="profile.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Lofi beats</title>
 </head>
 
 <body class="bg-white dark:bg-gray-900">
-  <nav  class="bg-black">
+  <nav class="bg-black">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
-          <button onclick="toggleNavbar('example-collapse-navbar')"  @click="open = ! open" type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <button onclick="toggleNavbar('example-collapse-navbar')" @click="open = ! open" type="button"
+            class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <!--
               Icon when menu is closed.
@@ -45,7 +30,8 @@
   
               Menu open: "hidden", Menu closed: "block"
             -->
-            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
             <!--
@@ -55,7 +41,8 @@
   
               Menu open: "block", Menu closed: "hidden"
             -->
-            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
@@ -64,31 +51,37 @@
           <div class=" flex flex-shrink-0 items-center sm:justify-start">
 
             <h1 class="px-2 text-2xl text-white flex flex-1 items-center">Lofi Beats</h1>
-            
-          </div> 
+
+          </div>
           <div class="hidden sm:ml-6 sm:block justify-center sm:items-stretch lg:justify">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="./index.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
-  
-              <a href="support.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Support Server</a>
-  
-              <a href="privacy.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Privacy Policy</a>
-  
-              <a href="https://status.lofibeats.tk" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Uptime</a>
+              <a href="./index.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                aria-current="page">Home</a>
+
+              <a href="support.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Support
+                Server</a>
+
+              <a href="privacy.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Privacy
+                Policy</a>
+
+              <a href="https://status.lofibeats.tk"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Uptime</a>
             </div>
           </div>
         </div>
         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
-  
+
           <!-- Profile dropdown -->
           <div class="flex justify-center">
             <div>
 
 
             </div>
-  
+
             <!--
               Dropdown menu, show/hide based on menu state.
   
@@ -104,195 +97,223 @@
         </div>
       </div>
     </div>
-  
+
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class=" hidden sm:hidden" id="example-collapse-navbar">
       <div class="space-y-1 px-2 pt-2 pb-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="index.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
-  
-        <a href="support.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Support Server</a>
-  
-        <a href="privacy.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Privacy Policy</a>
-  
-        <a href="https://status.lofibeats.tk" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Uptime</a>
+        <a href="index.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+          aria-current="page">Home</a>
+
+        <a href="support.html"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Support
+          Server</a>
+
+        <a href="privacy.html"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Privacy
+          Policy</a>
+
+        <a href="https://status.lofibeats.tk"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Uptime</a>
       </div>
     </div>
   </nav>
-      <section class="relative bg-gray-900">
-        <img
-          class="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
-          src="https://steamuserimages-a.akamaihd.net/ugc/945094571616867748/680E4979CC75A2310664E0883F3F3FC6CBECA3BE/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
-          alt="Couple on a bed with a dog"
-        />
-      
-        <div class="hidden sm:block sm:inset-0 sm:absolute sm:bg-gradient-to-r sm:from-black sm:to-transparent"></div>
-      
-        <div class="relative px-4 py-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
-          <div class="max-w-xl text-center sm:text-left">
-            <h1 class="text-3xl font-extrabold sm:text-5xl text-white">
-              Lofi Lover?
-              <strong class="font-extrabold text-indigo-500 sm:block text-white">
-                Intoducing Lofi Beats
-              </strong>
-            </h1>
-      
-            <p class="max-w-lg mt-4 sm:leading-relaxed sm:text-xl text-white">
-Best Lofi bot for your Discord server which have many channels and plays nonstop lofi through internet radios            </p>
-      
-            <div class="flex flex-wrap mt-8 text-center gap-4">
-              <a class="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-indigo-500 sm:w-auto active:bg-indogo-600 hover:bg-indigo-600 focus:outline-none focus:ring" href="https://discord.com/api/oauth2/authorize?client_id=871348875301122078&permissions=36768832&scope=applications.commands%20bot">
-                Invite Now
-              </a>
-      
+  <section class="relative bg-gray-900">
+    <img class="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
+      src="https://steamuserimages-a.akamaihd.net/ugc/945094571616867748/680E4979CC75A2310664E0883F3F3FC6CBECA3BE/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+      alt="Couple on a bed with a dog" />
 
-            </div>
-          </div>
-        </div>
-        
-      </section>
-<section>
-  <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-    <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+    <div class="hidden sm:block sm:inset-0 sm:absolute sm:bg-gradient-to-r sm:from-black sm:to-transparent"></div>
 
-      <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-700 sm:text-4xl md:mx-auto">
-        <span class="relative inline-block">
+    <div class="relative px-4 py-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
+      <div class="max-w-xl text-center sm:text-left">
+        <h1 class="text-3xl font-extrabold sm:text-5xl text-white">
+          Lofi Lover?
+          <strong class="font-extrabold text-indigo-500 sm:block text-white">
+            Intoducing Lofi Beats
+          </strong>
+        </h1>
 
-          <span class="relative text-white">Some</span>
-        </span>
-        <span class="text-white">Stats</span>
-      </h2>
-      <p class="text-base text-gray-400 md:text-lg">
-        Some stats of bot with the total number of users and total number of servers
-      </p>
-    </div>
-    <div class="relative w-full p-px mx-auto mb-4 overflow-hidden transition-shadow duration-300 border rounded lg:mb-8 lg:max-w-4xl group hover:shadow-xl">
-      <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-      <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-      <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-      <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-      <div class="relative flex flex-col items-center h-full py-10 duration-300 bg-white rounded-sm transition-color sm:items-stretch sm:flex-row">
-        <div class="px-12 py-8 text-center">
-          <h6 id="user" class="text-4xl font-bold text-indigo-500 sm:text-5xl">
-          </h6>
-          <p class="text-center text-black md:text-base">
-            The Total number of users the bot is interacting
-          </p>
-        </div>
-        <div class="w-56 h-1 transition duration-300 transform bg-gray-300 rounded-full group-hover:bg-deep-purple-accent-400 group-hover:scale-110 sm:h-auto sm:w-1"></div>
-        <div class="px-12 py-8 text-center">
-          <h6 id="server" class="text-4xl font-bold text-indigo-500 sm:text-5xl">
-          </h6>
-          <p class="text-center text-black md:text-base">
-            The Total number of server in which the bot in
-          </p>
+        <p class="max-w-lg mt-4 sm:leading-relaxed sm:text-xl text-white">
+          Best Lofi bot for your Discord server which have many channels and plays nonstop lofi through internet radios
+        </p>
+
+        <div class="flex flex-wrap mt-8 text-center gap-4">
+          <a class="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-indigo-500 sm:w-auto active:bg-indogo-600 hover:bg-indigo-600 focus:outline-none focus:ring"
+            href="https://discord.com/api/oauth2/authorize?client_id=871348875301122078&permissions=36768832&scope=applications.commands%20bot">
+            Invite Now
+          </a>
+
+
         </div>
       </div>
     </div>
 
-  </div>
-</section>
-<hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700">
-      <section class="bg-white dark:bg-gray-900 hero">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+  </section>
+  <section>
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
 
-            <h1 class=" text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Some Key Features</h1>
+        <h2
+          class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-700 sm:text-4xl md:mx-auto">
+          <span class="relative inline-block">
 
-
-        </div>
-    </section>
-    <section class="bg-white dark:bg-gray-900 cta-1">
-      <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-          <img class="w-full dark:hidden" src="LOFI.png" alt="dashboard image">
-          <img class="w-full hidden rounded-lg dark:block" src="LOFI.png" alt="dashboard image">
-          <div class="mt-4 md:mt-0">
-              <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Help Menu</h2>
-              <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Help Menu has ket simple for better understanding it contains some commands and an random image of Jake the Dog</p>
- 
-          </div>
+            <span class="relative text-white">Some</span>
+          </span>
+          <span class="text-white">Stats</span>
+        </h2>
+        <p class="text-base text-gray-400 md:text-lg">
+          Some stats of bot with the total number of users and total number of servers
+        </p>
       </div>
+      <div
+        class="relative w-full p-px mx-auto mb-4 overflow-hidden transition-shadow duration-300 border rounded lg:mb-8 lg:max-w-4xl group hover:shadow-xl">
+        <div
+          class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100">
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100">
+        </div>
+        <div
+          class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100">
+        </div>
+        <div
+          class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100">
+        </div>
+        <div
+          class="relative flex flex-col items-center h-full py-10 duration-300 bg-white rounded-sm transition-color sm:items-stretch sm:flex-row">
+          <div class="px-12 py-8 text-center">
+            <h6 id="user" class="text-4xl font-bold text-indigo-500 sm:text-5xl">
+            </h6>
+            <p class="text-center text-black md:text-base">
+              The Total number of users the bot is interacting
+            </p>
+          </div>
+          <div
+            class="w-56 h-1 transition duration-300 transform bg-gray-300 rounded-full group-hover:bg-deep-purple-accent-400 group-hover:scale-110 sm:h-auto sm:w-1">
+          </div>
+          <div class="px-12 py-8 text-center">
+            <h6 id="server" class="text-4xl font-bold text-indigo-500 sm:text-5xl">
+            </h6>
+            <p class="text-center text-black md:text-base">
+              The Total number of server in which the bot in
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700">
+  <section class="bg-white dark:bg-gray-900 hero">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+
+      <h1
+        class=" text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        Some Key Features</h1>
+
+
+    </div>
+  </section>
+  <section class="bg-white dark:bg-gray-900 cta-1">
+    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+      <img class="w-full dark:hidden" src="LOFI.png" alt="dashboard image">
+      <img class="w-full hidden rounded-lg dark:block" src="LOFI.png" alt="dashboard image">
+      <div class="mt-4 md:mt-0">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Help Menu</h2>
+        <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Help Menu has ket simple for better
+          understanding it contains some commands and an random image of Jake the Dog</p>
+
+      </div>
+    </div>
   </section>
   <section class="bg-white dark:bg-gray-900">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Different Lofi Channels</h1>
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Lofi Beats have multiple lofi radio options to listen your favourite one</p>
+      <div class="mr-auto place-self-center lg:col-span-7">
+        <h1
+          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          Different Lofi Channels</h1>
+        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Lofi Beats
+          have multiple lofi radio options to listen your favourite one</p>
 
-            <a href="https://discord.com/api/oauth2/authorize?client_id=871348875301122078&permissions=36768832&scope=applications.commands%20bot" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                Invite Now
-            </a> 
-            <br>
-        </div>
-        <div class=" lg:mt-0 lg:col-span-5 lg:flex">
-            <img class="rounded-lg" src="lofi-1.png" alt="mockup">
-        </div>                
-    </div>
-</section>
-    <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
-      <div class="mx-auto max-w-screen-xl">
-          <div class="md:flex md:justify-between">
-              <div class="mb-6 md:mb-0">
-                  <a href="https://flowbite.com" class="flex items-center">
-                      <img src="https://cdn.discordapp.com/avatars/871348875301122078/588aede2dd17e9eb62bcc1e37b874e0c.png" class="mr-3 h-8" alt="FlowBite Logo" />
-                      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Lofi Beats</span>
-                  </a>
-              </div>
-              <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-
-                  <div>
-                      <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                      <ul class="text-gray-600 dark:text-gray-400">
-                          <li class="mb-4">
-                              <a href="https://github.com/Lofi-Beats" class="hover:underline ">Github</a>
-                          </li>
-                          <li>
-                              <a href="https://discord.gg/WTama6GPkn" class="hover:underline">Discord</a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div>
-                      <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                      <ul class="text-gray-600 dark:text-gray-400">
-                          <li class="mb-4">
-                              <a href="privacy.html" class="hover:underline">Privacy Policy</a>
-                          </li>
-                          <li>
-                              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <div class="sm:flex sm:items-center sm:justify-between">
-              <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="" class="hover:underline">Lofi Beats</a>. All Rights Reserved.
-              </span>
-             
-          </div>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=871348875301122078&permissions=36768832&scope=applications.commands%20bot"
+          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+          Invite Now
+        </a>
+        <br>
       </div>
+      <div class=" lg:mt-0 lg:col-span-5 lg:flex">
+        <img class="rounded-lg" src="lofi-1.png" alt="mockup">
+      </div>
+    </div>
+  </section>
+  <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
+    <div class="mx-auto max-w-screen-xl">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+          <a href="https://flowbite.com" class="flex items-center">
+            <img src="https://cdn.discordapp.com/avatars/871348875301122078/588aede2dd17e9eb62bcc1e37b874e0c.png"
+              class="mr-3 h-8" alt="FlowBite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Lofi Beats</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+            <ul class="text-gray-600 dark:text-gray-400">
+              <li class="mb-4">
+                <a href="https://github.com/Lofi-Beats" class="hover:underline ">Github</a>
+              </li>
+              <li>
+                <a href="https://discord.gg/WTama6GPkn" class="hover:underline">Discord</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+            <ul class="text-gray-600 dark:text-gray-400">
+              <li class="mb-4">
+                <a href="privacy.html" class="hover:underline">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="terms.html" class="hover:underline">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href=""
+            class="hover:underline">Lofi Beats</a>. All Rights Reserved.
+        </span>
+
+      </div>
+    </div>
   </footer>
 </body>
 <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
 
-    <script>
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("block");
-    }
-    function fetchData() {
-	fetch('https://api.statcord.com/v3/871348875301122078').then(response => {
-		return response.json();
-	}).then(data => {
-		console.log(data.data[0].servers);
-		document.querySelector('#server').innerHTML = `${data.data[0].servers}+ Servers`
-		console.log(data.data[0].users);
-		document.querySelector('#user').innerHTML = `${data.data[0].users}+ Users`
-	}).catch(error => {
-		console.log(error);
-	});
-}
+<script>
+  function toggleNavbar(collapseID) {
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.toggle("block");
+  }
+  function fetchData() {
+    fetch('https://api.statcord.com/v3/871348875301122078').then(response => {
+      return response.json();
+    }).then(data => {
+      console.log(data.data[0].servers);
+      document.querySelector('#server').innerHTML = `${data.data[0].servers}+ Servers`
+      console.log(data.data[0].users);
+      document.querySelector('#user').innerHTML = `${data.data[0].users}+ Users`
+    }).catch(error => {
+      console.log(error);
+    });
+  }
 
-fetchData();
-  </script>
+  fetchData();
+</script>
 
 </html>
