@@ -100,6 +100,7 @@
       rgba(28, 30, 35, 1) 80%
     );
   }
+
   .big_play_pause:active {
     transform: translateY(4px);
     background: radial-gradient(at bottom right, #c92711 0%, #ea570a 80%);
